@@ -1,0 +1,72 @@
+//
+// Backgrounds
+//
+
+
+@each $color, $value in $colors {
+	@include bg-variant(".bg-#{$color}", $value);
+}
+
+@each $color, $value in $theme-colors {
+	@include bg-gradient-variant(".bg-gradient-#{$color}", $value);
+}
+
+@each $color, $value in $colors {
+	@include bg-gradient-variant(".bg-gradient-#{$color}", $value);
+}
+
+
+// Background colors with transparency
+
+@each $color, $value in $theme-colors {
+    @include bg-translucent-variant(".bg-translucent-#{$color}", $value);
+}
+
+
+// Sections backgrounds
+
+@each $color, $value in $section-colors {
+    @include bg-variant(".section-#{$color}", $value);
+}
+
+@each $color, $value in $theme-colors {
+    @include bg-gradient-variant(".bg-gradient-#{$color}", $value);
+}
+
+
+// Shape (svg) fill colors
+
+@each $color, $value in $theme-colors {
+    .fill-#{$color}  {
+        fill: $value;
+    }
+
+    .stroke-#{$color}  {
+        stroke: $value;
+    }
+}
+
+.fill-opacity-8 {
+	fill-opacity: .8;
+}
+
+.bg-gradient-ar-dark {
+    background-image: linear-gradient(
+        to right,
+        #602364,
+        #4e235b,
+        #3d2151,
+        #2e1e45,
+        #211a39
+    );
+}
+.bg-gradient-ar-light {
+    background-image: linear-gradient(
+        to left, 
+        #b934e1, 
+        #ca26c3, 
+        #d121a7, 
+        #d1288e, 
+        #cc3379
+    );
+}

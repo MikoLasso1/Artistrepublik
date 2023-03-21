@@ -1,0 +1,22 @@
+{
+  "name": "Artist Republik",
+  "short_name": "Artist Republik",
+  "icons": [
+      {
+          "src": "/android-chrome-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+      },
+      {
+          "src": "/android-chrome-256x256.png",
+          "sizes": "256x256",
+          "type": "image/png"
+      }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#081827",
+  "background_color": "#081827",
+  "gcm_sender_id": "482941778795",
+  "gcm_sender_id_comment": "Do not change the GCM Sender ID"
+}  

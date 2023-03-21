@@ -1,0 +1,13 @@
+//
+// Mask
+//
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include transition($transition-base);
+    background-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
+}
